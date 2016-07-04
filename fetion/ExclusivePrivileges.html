@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>专享特权</title>
+<script src="DD_belatedPNG_0.0.8a.js"></script>
+<script src="html5shiv.min.js"></script>
+<style>
+section{ display:block;}
+body,h1,h2,h5,h6,ul,dl,dt,dd,p{margin:0;padding:0;font-size:12px;font-family:"宋体";}
+a{text-decoration:none;vertical-align:top;}
+img{border:none;vertical-align:top;}
+li{list-style:none;}
+strong{font-weight:normal;}
+/*页面头部*/
+.header{height:74px;background:#f7f8f6;}
+.div{width:960px;margin:0 auto;}
+.header h1{float:left;width:171px;height:0;margin:10px 0;padding-top:54px;background:url(img/img7.png) no-repeat;overflow:hidden;}
+/*头部右侧*/
+.nav{float:right;height:74px;color:#596065;}
+.nav a{padding:0 5px;color:#666;}
+.nav a:hover{text-decoration:underline;}
+.nav li{float:left;padding:24px 0 38px;position:relative;}
+.nav .mark{display:inline-block;width:48px;padding-right:18px;}
+.nav span{width:8px;height:4px;position:absolute;left:58px;top:28px;background:url(img/img4.png) no-repeat;overflow:hidden;}
+.nav .pic10{background-position:-17px -99px;}
+/*头部导航左侧*/
+.nav1{height:37px;background:url(img/img8.png) repeat-x;}
+.div1{float:left;height:30px;line-height:30px;padding-top:7px;text-align:center;padding-left:10px;}
+.div1 a{display:inline-block;width:90px;color:#fff;font-size:14px;font-weight:bold;padding-right:1px;float:left;}
+.div1 a:hover{background:#f3f2f2;color:#333;text-decoration:underline;border:1px solid #dee0e6;border-radius:1px;margin-bottom:-1px;}
+.div .active{background:#f3f2f2;color:#333;position:relative;border:1px solid #dee0e6;border-radius:1px;margin-bottom:-1px;}
+.absolute{height:30px;padding-top:1px;position:absolute;left:767px;top:112px;line-height:30px;}
+.absolute a{color:#333;margin:0 8px;}
+.absolute a:hover{font-weight:bold;color:#cd1a09;text-decoration:underline;}
+.absolute .active1{font-weight:bold;color:#cd1a09;}
+/*头部导航右侧*/
+.list{float:right;width:92px;height:30px;line-height:30px;padding-top:7px;color:#fff;}
+.list li{float:left;}
+.list li a{color:#fff;font-size:12px;text-decoration:underline;}
+.list span{margin:0 5px;}
+.list a:hover{text-decoration:none;}
+/*专享特权*/
+.bjt{height:172px;background:url(img/bjt.jpg) repeat-x;padding-top:9px;padding-bottom:8px;}
+.exclusive{width:960px;height:172px;margin:0 auto;}
+.left{float:left;width:176px;height:169px;border:1px solid #f9d942;border-radius:2px;background:#fcf9d5;padding:0 19px;}
+.left .top{height:36px;padding-top:17px;line-height:18px;color:#666;}
+.left .huiyuan{height:38px;margin:7px 20px;border:1px solid #b31101;border-radius:4px;background:#c11201;line-height:38px;padding-left:54px;font-size:18px;font-weight:bold;position:relative;}
+.left .huiyuan a{color:#fff;}
+.huiyuan a span{display:inline-block;width:31px;height:31px;background:url(img/pic.png) no-repeat;position:absolute;left:10px;top:3px;}
+.bottom{height:36px;padding:10px 0 16px;color:#666;line-height:18px;}
+.bottom p{font-weight:bold;}
+.bottom span{color:#f00;}
+.center{float:left;width:512px;height:172px;margin-left:8px;position:relative;}
+.center img{width:512px;height:172px;}
+.mask,.text{width:100%;position:absolute;left:0;bottom:0;}
+.mask{height:30px;background:#000;opacity:0.3;filter:alpha(opacity=30);}
+.text{line-height:30px;color:#fff;text-indent:10px;font-weight:bold;}
+.center .ico1{width:14px;height:14px;margin:9px 5px 7px;position:absolute;right:5px;bottom:0;background:url(img/pic.png) no-repeat -133px 0;}
+.center .ico2{width:14px;height:14px;margin:9px 5px 7px;position:absolute;right:29px;bottom:0;background:url(img/pic.png) no-repeat -133px 0;}
+.center .ico3{width:14px;height:14px;margin:9px 5px 7px;position:absolute;right:58px;bottom:0;background:url(img/pic.png) no-repeat -133px 0;}
+.center .ico4{width:14px;height:14px;margin:9px 5px 7px;position:absolute;right:87px;bottom:0;background:url(img/pic.png) no-repeat -133px 0;}
+.center .ico5{width:14px;height:14px;margin:9px 5px 7px;position:absolute;right:116px;bottom:0;background:url(img/pic.png) no-repeat -133px 0;}
+.center .ico1:hover{background:url(img/pic.png) no-repeat -133px -16px;}
+.center .ico2:hover{background:url(img/pic.png) no-repeat -133px -16px;}
+.center .ico3:hover{background:url(img/pic.png) no-repeat -133px -16px;}
+.center .ico4:hover{background:url(img/pic.png) no-repeat -133px -16px;}
+.center .ico5:hover{background:url(img/pic.png) no-repeat -133px -16px;}
+.right{float:right;width:214px;height:170px;border:1px solid #d9d9d9;border-radius:2px;}
+.right h5{height:30px;border-bottom:1px solid #dbdbdb;line-height:30px;font-size:14px;text-indent:10px;color:#666;background:url(img/bjt.gif) repeat-x;}
+.right h5 span{color:#f12614;}
+.right ul{width:214px;height:90px;padding:10px 0 39px;background:#fafafa;}
+.right li{float:left;width:110px;height:30px;padding-left:9px;display:inline;overflow:hidden;}
+.right .width{width:110px;}
+.right .width2{width:85px;}
+.right li a{position:relative;width:85px;line-height:30px;float:left;text-indent:21px;color:#666;font-weight:bold;}
+.right ul span{width:16px;height:30px;position:absolute;left:0;top:0;}
+.right .pic{background:url(img/pic.png) no-repeat -32px 0;}
+.right .pic2{background:url(img/pic.png) no-repeat -49px 0;}
+.right .pic3{background:url(img/pic.png) no-repeat -66px 0;}
+.right .pic4{background:url(img/pic.png) no-repeat -83px 0;}
+.right .pic5{background:url(img/pic.png) no-repeat -100px 0;}
+.right .pic6{background:url(img/pic.png) no-repeat -117px 0;}
+.right a:hover{color:#ee2b0c;text-decoration:underline;}
+/*周边下载*/
+.ambitus{width:938px;height:300px;margin:0 auto;border:1px solid #dbdbdb;background:url(img/pic6.gif) repeat-x;padding:0 10px 11px;}
+.ambitus h2{height:39px;line-height:39px;font-size:18px;color:#666;border-bottom:2px solid #d9d9d9;}
+.ambitus h2 span{color:#d11708;font-size:20px;}
+.guild{width:936pz;height:250px;padding-top:20px;}
+.guild h6{height:23px;line-height:23px;text-align:center;background:#efefef;margin-bottom:20px;}
+.guild h6 a{color:#666;}
+.guild h6 a:hover{color:#d61f0a;text-decoration:underline;}
+/*头像下载*/
+.head{float:left;width:340px;}
+.head h6{width:326px;margin-right:14px;}
+.head li{float:left;width:170px;height:74px;margin-bottom:24px;}
+.head span{float:left;width:74px;height:74px;}
+.head .headImg1{background:url(img/pic.gif) no-repeat;}
+.head .headImg2{background:url(img/pic.gif) no-repeat -78px 0;}
+.head .headImg3{background:url(img/pic.gif) no-repeat -156px 0;}
+.head .headImg4{background:url(img/pic.gif) no-repeat -234px 0;}
+.head p{float:left;width:96px;height:38px;line-height:38px;text-indent:10px;color:#333;}
+.head li a{float:left;width:33px;height:19px;border:1px solid #e1e1e2;border-radius:2px;margin-left:10px;display:inline-block;line-height:19px;background:#efefef;text-align:center;color:#027fd1;}
+/*表情下载*/
+.face{float:left;width:340px;margin-left:21px;}
+.guild .face h6{width:326px;margin-right:14px;margin-bottom:0;}
+.face li{float:left;width:170px;height:74px;margin-top:20px;}
+.face span{float:left;width:77px;height:79px;}
+.face .faceImg1{background:url(img/pic.gif) no-repeat 0 -77px;}
+.face .faceImg2{background:url(img/pic.gif) no-repeat -79px -77px;}
+.face .faceImg3{background:url(img/pic.gif) no-repeat -157px -77px;}
+.face .faceImg4{background:url(img/pic.gif) no-repeat -235px -77px;}
+.face p{float:left;width:93px;height:38px;line-height:38px;text-indent:10px;color:#333;}
+.face li a{float:left;width:69px;height:19px;border:1px solid #e1e1e2;border-radius:2px;margin-left:10px;display:inline-block;line-height:19px;background:#efefef;text-align:center;color:#027fd1;}
+/*壁纸下载*/
+.wallpaper{float:right;width:214px;}
+.wallpaper li{width:214px;height:75px;margin-bottom:23px;}
+.wallpaper span{float:left;width:102px;height:74px;}
+.wallpaper .wallpaperImg1{background:url(img/pic.gif) no-repeat -312px 0;}
+.wallpaper .wallpaperImg2{background:url(img/pic.gif) no-repeat -314px -77px;}
+.wallpaper p{float:left;width:102px;height:16px;padding-bottom:2px;line-height:16px;text-indent:12px;color:#333;}
+.wallpaper li a{float:left;width:96px;height:15px;border:1px solid #e1e1e2;display:inline-block;line-height:15px;margin-left:12px;text-align:center;color:#333;background:#efefef;margin-bottom:3px;}
+.wallpaper li a:hover{color:#ee2b0c;text-decoration:underline;}
+/*星座运程*/
+.constellation{width:958px;height:273px;margin:0 auto;margin-top:8px;border:1px solid #dbdbdb;background:url(img/pic7.gif) repeat-x;}
+.left1{float:left;width:754px;height:273px;background:url(img/pic8.gif) no-repeat 723px 20px;}
+.left1 h2{width:713px;height:39px;line-height:39px;border-bottom:2px solid #d9d9d9;margin-left:11px;font-size:18px;color:#666;}
+.left1 h2 span{color:#d11708;font-size:20px;}
+.scorpio{float:left;width:745px;}
+.scorpioImg{float:left;width:119px;height:210px;padding-top:22px;}
+.scorpioImg span{float:left;width:90px;height:90px;border:1px solid #e7e7e7;background:url(img/pic2.gif) no-repeat;padding:1px;margin-bottom:3px;margin-left:11px;}
+.scorpioImg dt{float:left;width:94px;height:22px;line-height:22px;text-align:center;color:#cd1a09;margin-left:11px;margin-right:14px;}
+.scorpioImg dd{float:left;width:119px;height:20px;line-height:20px;text-align:center;color:#434343;}
+.main{float:left;width:158px;height:222px;padding-top:10px;}
+.main li{width:158px;height:38px;line-height:38px;font-weight:bold;color:#434343;}
+.main li span{width:12px;height:12px;margin-right:2px;overflow:hidden;background:url(img/pic2.gif) no-repeat -90px 0;margin-top:10px;display:inline-block;}
+.main .Stars{background:url(img/pic2.gif) no-repeat -90px -14px;}
+.content{float:left;width:124px;height:222px;padding-top:10px;}
+.content li{float:left;width:124px;height:38px;line-height:38px;font-weight:bold;color:#434343;}
+.menu{float:left;width:150px;height:217px;padding-top:15px;}
+.menu dt{line-height:26px;font-weight:bold;color:#434343;}
+.menu dd{line-height:25px;color:#434343;}
+.menu a{display:inline-block;width:150px;line-height:34px;text-align:right;color:#015790;}
+.menu a:hover{text-decoration:underline;}
+.subNav{float:right;width:171px;height:220px;padding-top:12px;}
+.subNav li{float:left;width:82px;height:31px;line-height:31px;}
+.subNav li a{float:left;width:82px;height:31px;color:#333;font-weight:bold;}
+.subNav li span{width:18px;height:19px;background:url(img/pic2.gif) no-repeat;margin-right:7px;display:inline-block;vertical-align:middle;}
+.subNav .aries{background-position:-108px -90px;}
+.subNav .taurus{background-position:-108px -133px;}
+.subNav .gemini{background-position:-90px -112px;}
+.subNav .cancer{background-position:-90px -154px;}
+.subNav .leo{background-position: -108px 0;}
+.subNav .virgo{background-position:-108px -46px;}
+.subNav .libra{background-position:-108px -112px;}
+.subNav .scorpio2{background-position:-90px -90px;}
+.subNav .sagittarius{background-position:-90px -133px;}
+.subNav .capricornus{background-position:-90px -175px;}
+.subNav .aquarius{background-position:-108px -24px;}
+.subNav .pissce{background-position:-108px -69px;}
+.subNav li a:hover{color:#e5260b;text-decoration:underline;}
+.right1{float:right;width:194px;height:253px;margin:20px 9px 0 0;}
+.right1 dt{width:194px;height:23px;line-height:23px;font-weight:bold;text-align:center;background:#efefef;color:#666;margin-bottom:12px;}
+.right1 .sea{width:88px;height:108px;border:1px solid #e7e7e7;margin:0 54px 19px 50px;background:url(img/pic2.gif) no-repeat 0 -92px;display:inline-block;padding:0;}
+.right1 dd{width:144px;height:45px;line-height:15px;padding:0 22px 0 28px;}
+/*会员秀*/
+.member{width:958px;height:275px;border:1px solid #dbdbdb;margin:8px auto 20px;background:url(img/pic9.gif) repeat-x;}
+.memberLeft{float:left;width:754px;height:275px;background:url(img/pic0.gif) no-repeat 723px 20px;}
+.memberLeft h2{width:713px;height:39px;margin-left:11px;border-bottom:2px solid #d9d9d9;line-height:39px;font-size:18px;color:#666;}
+.memberLeft h2 span{font-size:20px;color:#d11708;}
+.memberLeft ul{width:745px;height:214px;padding-top:20px;}
+.memberLeft li{float:left;width:104px;height:194px;margin:0 31px 0 12px;display:inline;}
+.memberLeft li span{float:left;width:104px;height:158px;border:1px solid #dbdbdb;background:url(img/pic3.gif) no-repeat;}
+.memberLeft .pico2{background-position:-112px 0;}
+.memberLeft .pico3{background-position:-223px 0;}
+.memberLeft .pico4{background-position:-336px 0;}
+.memberLeft .pico5{background-position:-448px 0;}
+.memberLeft li a{float:left;width:104px;line-height:34px;text-align:center;color:#333;}
+.memberLeft li a:hover{color:#e5260b;text-decoration:underline;}
+.memberRight{float:right;width:194px;padding-right:10px;padding-top:10px;}
+.memberRight h6{width:194px;line-height:23px;text-align:center;color:#666;background:#efefef;}
+.memberRight li{width:194px;height:27px;background:url(img/pic.jpg) repeat-x 0 bottom;}
+.memberRight li p{width:14px;height:14px;margin:6px 10px 5px 0;border:1px solid #c2c2c2;background:#f2f2f2;text-align:center;color:#666;float:left;}
+.memberRight li a{float:left;line-height:27px;color:#333;}
+.memberRight .active{height:107px;}
+.memberRight .active p{border-color:#751b0b;background:#a01d16;color:#fff;margin:47px 10px 44px 0;}
+.active span{float:left;width:56px;height:84px;margin-top:10px;background:url(img/pic3.gif) no-repeat -560px 0;}
+.active a{padding-top:37px;padding-bottom:43px;padding-left:12px;font-weight:bold;}
+.memberRight a:hover{color:#e5260b;text-decoration:underline;}
+/*底部*/
+.footer{height:90px;border-top:1px solid #cdcdcd;padding:13px 0;}
+.nav2{width:960px;height:32px;line-height:32px;font-weight:bold;text-align:center;word-spacing:15px;}
+.nav2 a{color:#434343;}
+.nav2 a:hover{text-decoration:underline;}
+.footerBot{height:32px;line-height:32px;padding:0 353px;position:relative;}
+.footerBot span{width:15px;height:18px;position:absolute;left:353px;top:8px;background:url(img/img4.png) no-repeat;}
+.footerBot .pic10{background-position:0 -86px;}
+.footerBot a{display:inline-block;padding-left:24px;color:#666;}
+.footerBot a:hover{text-decoration:underline;}
+.footerBot strong{display:inline-block;color:#333;padding-left:25px;}
+</style>
+</head>
+<body>
+<!--页面头部-->
+<header class="header">
+	<div class="div">
+	<h1>飞信会员</h1>
+    <ul class="nav">
+    	<li><a href="#">登录</a></li>
+        <li><a href="#">注册</a>|</li>
+        <li><a href="#" class="mark">个人中心<span class="pic10"></span></a>|</li>
+        <li><a href="#" class="mark">飞信首页<span class="pic10"></span></a></li>
+    </ul>
+    </div>
+</header>
+<!--头部导航-->
+<nav class="nav1">
+	<div class="div">
+    	<div class="div1">
+    		<a href="index.html" base target="_blank">会员首页</a>
+        	<a href="FetionPrivileges.html" base target="_blank">飞信特权</a>
+        	<a href="#">靓号特权</a>
+        	<a href="ExclusivePrivileges.html" class="active" base target="_blank">专享特权</a>
+        	<a href="#">生活特权</a>
+        	<a href="#">会员活动</a>
+        	<a href="NONO.html" base target="_blank">年费会员</a>
+    	</div>
+        <ul class="list">
+        	<li><a href="#">会员管理</a><span>|</span></li>
+        	<li><a href="#">反馈</a></li>
+    	</ul>
+    </div>    
+</nav>
+<!--内容部分-->
+<div class="bjt">
+<section class="exclusive">
+	<div class="left">
+    	<div class="top">飞信会员可享受丰富的特权功能,生活特权、参与精彩活动。</div>
+        <div class="huiyuan"><a href="#"><span></span>开通会员</a></div>
+        <div class="bottom">
+        <p>短信开通：</p>
+        发送<span>Z</span>至<span>12520</span></div>
+    </div>
+    <div class="center">
+		 <img src="img/tequan.jpg" />
+         <span class="mask"></span>
+         <a href="#" class="text">飞信VIP优先享特权</a>
+         <a href="#" class="ico1"></a>
+         <a href="#" class="ico2"></a>
+         <a href="#" class="ico3"></a>
+         <a href="#" class="ico4"></a>
+         <a href="#" class="ico5"></a>  
+<!--[if IE 6]>
+<script src="DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('.img')；
+</script>
+<![endif]-->
+    </div>
+    <div class="right">
+    	<h5><span>&gt;</span> 专享特权</h5>
+        <ul>
+        	<li class="width">
+                <a href="#"><span class="pic"></span>图书阅读</a>
+            </li>
+            <li class="width2">
+                <a href="#"><span class="pic2"></span>头像下载</a>
+            </li>
+            <li class="width">
+                <a href="#"><span class="pic3"></span>会员秀</a>
+            </li>
+            <li class="width2">
+                <a href="#"><span class="pic4"></span>表情下载</a>
+            </li>
+            <li class="width">
+                <a href="#"><span class="pic5"></span>壁纸下载</a>
+            </li>
+            <li class="width2">
+                <a href="#"><span class="pic6"></span>星座运程</a>
+            </li>
+        </ul>
+    </div>
+</section>
+</div>
+<!--周边下载-->
+<section class="ambitus">
+	<h2><span>周边</span>下载</h2>
+    <div class="guild">
+    	<div class="head">
+        	<h6><a href="#">头像下载</a></h6>
+            <ul>
+            	<li>
+                	<span class="headImg1"></span>
+                    <p>深呼吸</p>
+                    <a href="#">设置</a>
+                </li>
+                <li>
+                	<span class="headImg2"></span>
+                    <p>踢足球</p>
+                    <a href="#">设置</a>
+                </li>
+                <li>
+                	<span class="headImg3"></span>
+                    <p>草帽</p>
+                    <a href="#">设置</a>
+                </li>
+                <li>
+                	<span class="headImg4"></span>
+                    <p>歌唱</p>
+                    <a href="#">设置</a>
+                </li>
+            </ul>
+        </div>
+        <div class="face">
+        	<h6><a href="#">表情下载</a></h6>
+            <ul>
+            	<li>
+                	<span class="faceImg1"></span>
+                    <p>寒食节</p>
+                    <a href="#">添加表情包</a>
+                </li>
+                <li>
+                	<span class="faceImg2"></span>
+                    <p>乐动姐妹淘</p>
+                    <a href="#">添加表情包</a>
+                </li>
+                <li>
+                	<span class="faceImg3"></span>
+                    <p>小飞感谢你</p>
+                    <a href="#">添加表情包</a>
+                </li>
+                <li>
+                	<span class="faceImg4"></span>
+                    <p>小飞运动会</p>
+                    <a href="#">添加表情包</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wallpaper">
+        	<h6><a href="#">壁纸下载</a></h6>
+            <ul>
+            	<li>
+                	<span class="wallpaperImg1"></span>
+                	<p>郊外野餐</p>
+                	<a href="#">1024x768</a>
+                    <a href="#">1280x1024</a>
+                    <a href="#">1280x800</a>
+                </li>
+                <li>
+                	<span class="wallpaperImg2"></span>
+                	<p>郊外欢歌</p>
+                	<a href="#">1024x768</a>
+                    <a href="#">1280x1024</a>
+                    <a href="#">1280x800</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--星座运程-->
+<section class="constellation">
+	<div class="left1">
+    	<h2><span>星座</span>运程</h2>
+        <div class="scorpio">
+        	<dl class="scorpioImg">
+            	<span></span>
+                <dt>天蝎座</dt>
+                <dd>(10月24日-11月21日)</dd>
+            </dl>
+            <ul class="main">
+            	<li>时间：11月19日</li>
+                <li>综合运势：
+                	<span></span><span></span><span></span><span></span><span class="Stars"></span>
+                </li>
+                <li>爱情运势：
+                	<span></span><span></span><span></span><span></span><span class="Stars"></span>
+                </li>
+                <li>工作状况：
+                	<span></span><span></span><span></span><span></span><span class="Stars"></span>
+                </li>
+                <li>理财投资：
+                	<span></span><span></span><span></span><span class="Stars"></span><span class="Stars"></span>
+                </li>
+            </ul>
+            <ul class="content">
+            	<li>健康指数：88</li>
+                <li>商谈指数：81</li>
+                <li>幸运颜色：粉红色</li>
+                <li>幸运数字：9</li>
+                <li>速配星座：天蝎座</li>
+            </ul>
+            <dl class="menu">
+            	<dt>今日温馨提示：</dt>
+                <dd>从外到内都显得容光焕发更加艳丽的感觉呢。不过白天中似乎光彩还未显现出来，到了夜晚就开始自然流露，当然要为晚上的约会...</dd>
+                <a href="#">点击查看详情</a>
+            </dl>
+            <ul class="subNav">
+        	<li>
+                <a href="#"><span class="aries"></span>白羊座</a>
+            </li>
+            <li>
+                <a href="#"><span class="taurus"></span>金牛座</a>
+            </li>
+            <li>
+                <a href="#"><span class="gemini"></span>双子座</a>
+            </li>
+            <li>
+                <a href="#"><span class="cancer"></span>巨蟹座</a>
+            </li>
+            <li>
+                <a href="#"><span class="leo"></span>狮子座</a>
+            </li>
+            <li>
+                <a href="#"><span class="virgo"></span>处女座</a>
+            </li>
+            <li>
+                <a href="#"><span class="libra"></span>天秤座</a>
+            </li>
+            <li>
+                <a href="#"><span class="scorpio2"></span>天蝎座</a>
+            </li>
+            <li>
+                <a href="#"><span class="sagittarius"></span>射手座</a>
+            </li>
+            <li>
+                <a href="#"><span class="capricornus"></span>摩羯座</a>
+            </li>
+            <li>
+                <a href="#"><span class="aquarius"></span>水瓶座</a>
+            </li>
+            <li>
+                <a href="#"><span class="pissce"></span>双鱼座</a>
+            </li>
+        </ul>
+        </div>
+    </div>       
+    <dl class="right1">
+    	<dt>图书阅读即将上线</dt>
+        <dd class="sea"></dd>
+        <dd>再坚持一下，往前走两步，就可以把这座山翻过去，海阔天高。如果重来一遍……</dd>
+    </dl>
+</section>
+<!--会员秀-->
+<section class="member">
+	<div class="memberLeft">
+    	<h2><span>会员</span>秀</h2>
+        <ul>
+        	<li>
+            	<span class="pico1"></span>
+                <a href="#">清新学妹</a>
+            </li>
+            <li>
+            	<span class="pico2"></span>
+                <a href="#">恬淡素雅</a>
+            </li>
+            <li>
+            	<span class="pico3"></span>
+                <a href="#">粉妆玉琢</a>
+            </li>
+            <li>
+            	<span class="pico4"></span>
+                <a href="#">阳光学弟</a>
+            </li>
+            <li>
+            	<span class="pico5"></span>
+                <a href="#">雍容端庄</a>
+            </li>
+        </ul>
+    </div>
+    <ul class="memberRight">
+    	<h6>会员秀排行</h6>
+    	<li class="active">
+        	<p>1</p>
+            <span></span>
+            <a href="#">清新学妹</a>
+        </li>
+        <li>
+        	<p>2</p>
+            <a href="#">阳光学弟</a>
+        </li>
+        <li>
+        	<p>3</p>
+            <a href="#">雍容端庄</a>
+        </li>
+        <li>
+        	<p>4</p>
+            <a href="#">恬淡素雅</a>
+        </li>
+        <li>
+        	<p>5</p>
+            <a href="#">粉妆玉琢</a>
+        </li>
+    </ul>
+</section>
+<!--底部-->
+<footer class="footer">
+	<div class="div">
+    	<nav class="nav2">
+        	<a href="#">法律声明</a>
+            <a href="#">关于移动</a>
+            <a href="#">关于飞信</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站地图</a>
+            <a href="#">友情链接</a>
+        </nav>
+        <div class="footerBot">
+        <span class="pic10"></span><a href="#">京ICP备05002571号</a>
+        <strong>客服电话：10086</strong>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>年费会员</title>
+<script src="DD_belatedPNG_0.0.8a.js"></script>
+<script src="html5shiv.min.js"></script>
+<style>
+body,h1,h2,ul,dl,dt,dd{margin:0;padding:0;font-size:12px;font-family:"宋体";}
+a{text-decoration:none;}
+img{border:none;vertical-align:top;}
+li{list-style:none;}
+strong{font-weight:normal;}
+/*页面头部*/
+.header{height:74px;background:#f7f8f6;}
+.div{width:960px;margin:0 auto;}
+.header h1{float:left;width:171px;height:0;margin:10px 0;padding-top:54px;background:url(img/img7.png) no-repeat;overflow:hidden;}
+/*头部右侧*/
+.nav{float:right;height:74px;color:#596065;}
+.nav a{padding:0 5px;color:#666;}
+.nav a:hover{text-decoration:underline;}
+.nav li{float:left;padding:24px 0 38px;position:relative;}
+.nav .mark{display:inline-block;width:48px;padding-right:18px;}
+.nav span{width:8px;height:4px;position:absolute;left:58px;top:28px;background:url(img/img4.png) no-repeat -17px -99px;overflow:hidden;}
+/*头部导航左侧*/
+.nav1{height:37px;background:url(img/img8.png) repeat-x;}
+.bottom{height:32px;background:#fdfdfd;border-bottom:1px solid #f9f9f9;}
+.div1{float:left;height:30px;line-height:30px;padding-top:7px;text-align:center;padding-left:10px;}
+.div1 a{display:inline-block;width:90px;color:#fff;font-size:14px;font-weight:bold;padding-right:1px;float:left;}
+.div1 a:hover{background:#f3f2f2;color:#333;text-decoration:underline;border:1px solid #dee0e6;border-radius:1px;}
+.div .active{background:#f3f2f2;color:#333;position:relative;border:1px solid #dee0e6;border-radius:1px;}
+.absolute{height:30px;padding-top:1px;position:absolute;left:767px;top:112px;line-height:30px;}
+.absolute a{color:#333;margin:0 8px;}
+.absolute a:hover{font-weight:bold;color:#cd1a09;text-decoration:underline;}
+.absolute .active1{font-weight:bold;color:#cd1a09;}
+/*头部导航右侧*/
+.list{float:right;width:92px;height:30px;line-height:30px;padding-top:7px;color:#fff;}
+.list li{float:left;}
+.list li a{color:#fff;font-size:12px;text-decoration:underline;}
+.list span{margin:0 5px;}
+.list a:hover{text-decoration:none;}
+/*图片*/
+.img{height:286px;padding:20px 0 4px;position:relative;}
+.img img{width:960px;height:286px;}
+.img a{width:182px;height:41px;border:1px solid #b01101;border-radius:3px;background:#cd1a09;position:absolute;left:223px;bottom:60px;font-size:14px;color:#fff;line-height:41px;text-indent:62px;font-weight:bold;}
+.img span{width:34px;height:34px;position:absolute;left:242px;bottom:64px;background:url(img/img4.png) no-repeat;}
+.img .pic0{background-position:0 -105px;}
+/*内容区*/
+.section{height:485px;}
+.section h2{height:70px;line-height:70px;border-bottom:1px solid #f2f2f2;font-size:24px;color:#cd1a09;}
+.dl{height:85px;padding:26px 0;border-bottom:1px solid #f2f2f2;}
+.section dl{float:left;position:relative;}
+.tr{width:202px;padding-left:102px;}
+.td{width:202px;padding-left:118px;background:url(img/bjt.png) no-repeat;}
+.td0{width:218px;padding-left:118px;background:url(img/bjt.png) no-repeat;}
+.dt{height:31px;line-height:31px;font-size:14px;color:#434343;font-weight:bold;}
+.dd{height:54px;line-height:18px;color:#666;}
+.section span{width:86px;height:85px;position:absolute;left:15px;top:0;background:url(img/img4.png) no-repeat;}
+.section .pic2{background-position:-91px 0;}
+.section .pic3{background-position:-181px 0;}
+.section .pic4{background-position:-270px 0;}
+.section .pic5{background-position:-360px 0;}
+.section .pic6{background-position:-450px 0;}
+.section .pic7{background-position:-540px 0;}
+.section .pic8{background-position:-630px 0;}
+.section .pic9{background-position:-720px 0;}
+/*图片*/
+.img1{height:107px;padding:20px 0;position:relative;}
+.img1 img{width:960px;height:107px;}
+.img1 a{width:182px;height:41px;border:1px solid #b01101;border-radius:3px;background:#cd1a09;position:absolute;right:45px;bottom:51px;font-size:14px;color:#fff;line-height:41px;text-indent:62px;font-weight:bold;}
+.img1 span{width:34px;height:34px;position:absolute;left:750px;bottom:55px;background:url(img/img4.png) no-repeat 0 -105px;}
+/*底部*/
+.footer{height:90px;border-top:1px solid #cdcdcd;padding:13px 0;}
+.nav2{width:960px;height:32px;line-height:32px;font-weight:bold;text-align:center;word-spacing:15px;}
+.nav2 a{color:#434343;}
+.nav2 a:hover{text-decoration:underline;}
+.footerBot{width:960px;height:32px;line-height:32px;text-align:center;position:relative;}
+.footerBot span{width:15px;height:18px;position:absolute;left:353px;top:8px;background:url(img/img4.png) no-repeat 0 -86px;}
+.footerBot a{display:inline-block;padding-left:24px;color:#666;}
+.footerBot a:hover{text-decoration:underline;}
+.footerBot strong{display:inline-block;color:#333;padding-left:25px;}
+</style>
+</head>
+<body>
+<header class="header">
+	<div class="div">
+	<h1>飞信会员</h1>
+    <ul class="nav">
+    	<li><a href="#">登录</a></li>
+        <li><a href="#">注册</a>|</li>
+        <li><a href="#" class="mark">个人中心<span class="pic10"></span></a>|</li>
+        <li><a href="#" class="mark">飞信首页<span class="pic10"></span></a></li>
+    </ul>
+    </div>
+</header>
+<nav class="nav1">
+	<div class="div">
+    	<div class="div1">
+    		<a href="index.html" base target="_blank">会员首页</a>
+        	<a href="FetionPrivileges.html" base target="_blank">飞信特权</a>
+        	<a href="#">靓号特权</a>
+        	<a href="ExclusivePrivileges.html" base target="_blank">专享特权</a>
+        	<a href="#">生活特权</a>
+        	<a href="#">会员活动</a>
+        	<a href="#" base target="_blank" class="active">年费会员</a>
+    	</div>
+        <ul class="list">
+        	<li><a href="#">会员管理</a><span>|</span></li>
+        	<li><a href="#">反馈</a></li>
+    	</ul>
+    </div>    
+</nav>
+<div class="bottom"></div>
+<div class="absolute">
+	<a href="#" class="active1">年费介绍</a>|
+    <a href="#">我的年费</a>
+</div>
+<div class="img div">
+	<img src="img/img6.png" />
+    <a href="#">开通年费会员</a>
+    <span class="pic0"></span>   
+</div>
+<section class="section div">
+	<h2><em>年费会员特权</em></h2>
+    <div class="dl">
+    <dl class="tr">
+    	<span class="pic1"></span>
+        <dt class="dt">最高2000人好友</dt>
+        <dd class="dd">成为年费会员，即可专享最高<br>2000人好友上限</dd>
+    </dl>
+    <dl class="td">
+    	<span class="pic2"></span>
+        <dt class="dt">1000人高级群</dt>
+        <dd class="dd">获得创建千人群资格，还可独享<br>1个1000人群</dd>
+    </dl>
+    <dl class="td0">
+    	<span class="pic3"></span>
+        <dt class="dt">500人高级群特权</dt>
+        <dd class="dd">成为年费会员即可创建或升级高级群5<br>00人</dd>
+    </dl>
+    </div>
+    <div class="dl">
+    <dl class="tr">
+    	<span class="pic4"></span>
+        <dt class="dt">飞信电话特权100分钟</dt>
+        <dd class="dd">成为年费会员每月可领取100分钟<br>飞信电话通话时长</dd>
+    </dl>
+    <dl class="td">
+    	<span class="pic5"></span>
+        <dt class="dt">每月100条群主群发短信特权</dt>
+        <dd class="dd">成为年费会员可享有群主群发短信每<br>月最高100条群组短信特权</dd>
+    </dl>
+    <dl class="td0">
+    	<span class="pic6"></span>
+        <dt class="dt">3年消息云储存特权</dt>
+        <dd class="dd">成为年费会员可享有消息云储存<br>特权储存时长为3年</dd>
+    </dl>
+    </div>
+    <div class="dl">
+    <dl class="tr">
+    	<span class="pic7"></span>
+        <dt class="dt">200点等级经验值奖励</dt>
+        <dd class="dd">额外赠送200点飞信等级经验值</dd>
+    </dl>
+    <dl class="td">
+    	<span class="pic8"></span>
+        <dt class="dt">最高1.2倍等级加速特权</dt>
+        <dd class="dd">成为年费会员即可享受等级加速<br>1.2倍</dd>
+    </dl>
+    <dl class="td0">
+    	<span class="pic9"></span>
+        <dt class="dt">更多特权，敬请期待</dt>
+        <dd class="dd">飞信会员将不断努力，为您推出更新<br>特权</dd>
+    </dl>
+    </div>
+</section>
+<div class="img1 div">
+	<img src="img/img5.png" />
+    <a href="#">开通年费会员</a>
+    <span class="pic0"></span>
+<!--[if IE 6]>
+<script src="DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('.img')；
+</script>
+<![endif]-->
+</div>
+<footer class="footer">
+	<div class="div">
+    	<nav class="nav2">
+        	<a href="#">法律声明</a>
+            <a href="#">关于移动</a>
+            <a href="#">关于飞信</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站地图</a>
+            <a href="#">友情链接</a>
+        </nav>
+        <div class="footerBot">
+        <span class="pic10"></span><a href="#">京ICP备05002571号</a>
+        <strong>客服电话：10086</strong>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

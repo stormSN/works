@@ -1,0 +1,458 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>飞信特权</title>
+<script src="DD_belatedPNG_0.0.8a.js"></script>
+<script src="html5shiv.min.js"></script>
+<style>
+body,h1,h2,ul,dl,dt,dd,p{margin:0;padding:0;font-size:12px;font-family:"宋体";}
+a{text-decoration:none;}
+img{border:none;vertical-align:top;}
+li{list-style:none;}
+strong{font-weight:normal;}
+/*页面头部*/
+.header{height:74px;background:#f7f8f6;}
+.div{width:960px;margin:0 auto;}
+.header h1{float:left;width:171px;height:0;margin:10px 0;padding-top:54px;background:url(img/img7.png) no-repeat;overflow:hidden;}
+/*头部右侧*/
+.nav{float:right;height:74px;color:#596065;}
+.nav a{padding:0 5px;color:#666;}
+.nav a:hover{text-decoration:underline;}
+.nav li{float:left;padding:24px 0 38px;position:relative;}
+.nav .mark{display:inline-block;width:48px;padding-right:18px;}
+.nav span{width:8px;height:4px;position:absolute;left:58px;top:28px;background:url(img/img4.png) no-repeat;overflow:hidden;}
+.nav .pic10{background-position:-17px -99px;}
+/*头部导航左侧*/
+.nav1{height:37px;background:url(img/img8.png) repeat-x;}
+.div1{float:left;height:30px;line-height:30px;padding-top:7px;text-align:center;padding-left:10px;}
+.div1 a{display:inline-block;width:90px;color:#fff;font-size:14px;font-weight:bold;padding-right:1px;float:left;}
+.div1 a:hover{background:#f3f2f2;color:#333;text-decoration:underline;border:1px solid #dee0e6;border-radius:1px;}
+.div .active{background:#f3f2f2;color:#333;position:relative;border:1px solid #dee0e6;border-radius:1px;}
+.absolute{height:30px;padding-top:1px;position:absolute;left:767px;top:112px;line-height:30px;}
+.absolute a{color:#333;margin:0 8px;}
+.absolute a:hover{font-weight:bold;color:#cd1a09;text-decoration:underline;}
+.absolute .active1{font-weight:bold;color:#cd1a09;}
+/*头部导航右侧*/
+.list{float:right;width:92px;height:30px;line-height:30px;padding-top:7px;color:#fff;}
+.list li{float:left;}
+.list li a{color:#fff;font-size:12px;text-decoration:underline;}
+.list span{margin:0 5px;}
+.list a:hover{text-decoration:none;}
+/*内容区*/
+.section{width:960px;margin:0 auto;padding-top:21px;position:relative;}
+.section div{width:754px;padding-left:206px;padding-bottom:20px;}
+.section header{height:61px;}
+.section h2{height:28px;line-height:28px;border-left:2px solid #d53920;text-indent:10px;font-size:24px;color:#333;font-family:Tahoma;}
+.section p{height:33px;line-height:33px;color:#999;}
+.section li{float:left;width:250px;height:102px;border:1px solid #dcdcdc;margin-right:-1px;margin-bottom:-1px;}
+.section dl{width:159px;height:70px;position:relative;padding-top:32px;padding-left:91px;}
+.section dt{line-height:24px;font-size:16px;color:#333;}
+.section dd{line-height:20px;color:#999;}
+/*左侧导航*/
+.sidebar{width:175px;height:305px;border-bottom:1px solid #dcdcdc;position:absolute;left:0;top:21px;}
+.sidebar a{float:left;width:110px;height:60px;border-top:1px solid #dcdcdc;line-height:60px;font-size:18px;color:#999;padding-left:65px;position:relative;}
+.sidebar span{width:32px;height:32px;position:absolute;left:27px;top:13px;background:url(img/img3.gif) no-repeat;}
+.sidebar .sidebarImg2{background-position:-36px 0;}
+.sidebar .sidebarImg3{background-position:-71px 0;}
+.sidebar .sidebarImg4{background-position:-106px 0;}
+.sidebar .sidebarImg5{background-position:-141px 0;}
+.sidebar .active{background:#f3f3f3;}
+.sidebar a:hover{background:#f3f3f3;}
+/*最新特权*/
+.privilege p{float:left;}
+.privilege a{float:right;width:100px;height:25px;border:1px solid #b01101;background:#c11201;color:#fff;text-indent:36px;border-radius:3px;line-height:25px;position:relative;font-weight:bold;}
+.privilege .pic{position:absolute;left:8px;top:2px;width:21px;height:21px;background:url(img/img3.gif) no-repeat -174px 0;}
+.privilege ul{height:208px;}
+.privilege span{width:60px;height:60px;position:absolute;left:20px;top:26px;background:url(img/img3.gif) no-repeat 0 -38px;}
+.privilege .privilegeImg2{background-position:-62px -38px;}
+.privilege .privilegeImg3{background-position:-124px -38px;}
+.privilege .privilegeImg4{background-position:-186px -38px;}
+/*通信特权*/
+.communication ul{height:208px;}
+.communication span{width:60px;height:60px;position:absolute;left:20px;top:26px;background:url(img/img3.gif) no-repeat 0 -102px;}
+.communication .communicationImg2{background-position:-62px -102px;}
+.communication .communicationImg3{background-position:-124px -102px;}
+.communication .communicationImg4{background-position:-186px -102px;}
+/*飞信特权*/
+.fetion ul{height:620px;}
+.fetion span{width:70px;height:66px;position:absolute;left:20px;top:26px;background:url(img/img.jpg) no-repeat 0 0;}
+.fetion .fetionImg2{background-position:-72px 0;}
+.fetion .fetionImg3{background-position:-144px 0;}
+.fetion .fetionImg4{background-position:0 -69px;}
+.fetion .fetionImg5{background-position:-72px -69px;}
+.fetion .fetionImg6{background-position:-144px -69px;}
+.fetion .fetionImg7{background-position:0 -139px;}
+.fetion .fetionImg8{background-position:-72px -139px;}
+.fetion .fetionImg9{background-position:-144px -139px;}
+.fetion .fetionImg10{background-position:0 -210px;}
+.fetion .fetionImg11{background-position:-72px -210px;}
+.fetion .fetionImg12{background-position:-144px -210px;}
+.fetion .fetionImg13{background-position:0 -280px;}
+.fetion .fetionImg14{background-position:-72px -280px;}
+.fetion .fetionImg15{background-position:-144px -280px;}
+.fetion .fetionImg16{background-position:0 -350px;}
+.fetion .fetionImg17{background-position:-72px -350px;}
+.fetion .fetionImg18{background-position:-144px -350px;}
+/*个性特权*/
+.personality ul{height:164px;}
+.personality span{width:59px;height:59px;position:absolute;left:20px;top:26px;background:url(img/img3.gif) no-repeat 0 -166px;}
+.personality .personalityImg2{background-position:-62px -166px;}
+/*专享特权*/
+.exclusive ul{height:104px;}
+.exclusive span{width:59px;height:61px;position:absolute;left:20px;top:26px;background:url(img/img3.gif) no-repeat -124px -166px;}
+.exclusive .exclusiveImg2{background-position:-187px -166px;}
+.exclusive .exclusiveImg3{background-position:0 -232px;}
+/*图片*/
+.img{width:960px;height:107px;margin:0 auto;position:relative;margin-bottom:20px;}
+.img img{width:960px;height:107px;}
+.img a{width:182px;height:40px;border:1px solid #b01101;border-radius:3px;background:#cb1908;color:#fff;position:absolute;right:45px;top:33px;line-height:40px;text-indent:62px;font-size:16px;}
+.img a span{width:34px;height:34px;position:absolute;left:19px;top:3px;background:url(img/img3.gif) no-repeat -212px 0;}
+/*底部*/
+.footer{height:90px;border-top:1px solid #cdcdcd;padding:13px 0;}
+.nav2{width:960px;height:32px;line-height:32px;font-weight:bold;text-align:center;word-spacing:15px;}
+.nav2 a{color:#434343;}
+.nav2 a:hover{text-decoration:underline;}
+.footerBot{height:32px;line-height:32px;padding:0 353px;position:relative;}
+.footerBot span{width:15px;height:18px;position:absolute;left:353px;top:8px;background:url(img/img4.png) no-repeat;}
+.footerBot .pic10{background-position:0 -86px;}
+.footerBot a{display:inline-block;padding-left:24px;color:#666;}
+.footerBot a:hover{text-decoration:underline;}
+.footerBot strong{display:inline-block;color:#333;padding-left:25px;}
+</style>
+</head>
+<body>
+<!--页面头部-->
+<header class="header">
+	<div class="div">
+	<h1>飞信会员</h1>
+    <ul class="nav">
+    	<li><a href="#">登录</a></li>
+        <li><a href="#">注册</a>|</li>
+        <li><a href="#" class="mark">个人中心<span class="pic10"></span></a>|</li>
+        <li><a href="#" class="mark">飞信首页<span class="pic10"></span></a></li>
+    </ul>
+    </div>
+</header>
+<!--导航-->
+<nav class="nav1">
+	<div class="div">
+    	<div class="div1">
+    		<a href="index.html" base target="_blank">会员首页</a>
+        	<a href="#" class="active">飞信特权</a>
+        	<a href="#">靓号特权</a>
+        	<a href="ExclusivePrivileges.html" base target="_blank">专享特权</a>
+        	<a href="#">生活特权</a>
+        	<a href="#">会员活动</a>
+        	<a href="NONO.html" base target="_blank">年费会员</a>
+    	</div>
+        <ul class="list">
+        	<li><a href="#">会员管理</a><span>|</span></li>
+        	<li><a href="#">反馈</a></li>
+    	</ul>
+    </div>    
+</nav>
+<!--页面内容-->
+<section class="section">
+<!--左边导航-->
+	<nav class="sidebar">
+    	<a href="#" class="active"><span class="sidebarImg"></span>最新特权</a>
+        <a href="#"><span class="sidebarImg2"></span>通信特权</a>
+        <a href="#"><span class="sidebarImg3"></span>飞信特权</a>
+        <a href="#"><span class="sidebarImg4"></span>个性特权</a>
+        <a href="#"><span class="sidebarImg5"></span>专享特权</a>
+    </nav>
+<!--最新特权-->
+	<div class="privilege">
+    	<header>
+        	<h2>最新特权</h2>
+        	<p>飞信会员享有最新特权</p>
+        	<a href="#"><span class="pic"></span>开通会员</a>
+        </header>
+        <ul>
+        	<li>
+            	<dl>
+                	<span class="privilegeImg"></span>
+                    <dt>千人群</dt>
+                    <dd>创建千人群，可独享1个1000<br/>人群</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="privilegeImg2"></span>
+                    <dt>云消息存储</dt>
+                    <dd>漫游聊天 随手翻查</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="privilegeImg3"></span>
+                    <dt>群主群发短信</dt>
+                    <dd>飞信会员群主发群内短信100条/月</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="privilegeImg4"></span>
+                    <dt>表情特权</dt>
+                    <dd>飞信会员专属表情</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+<!--通信特权-->
+	<div class="communication">
+    	<header>
+        	<h2>通信特权</h2>
+            <p>飞信会员用户专享通信特权，让传达 更生动、更传情！</p>
+        </header>
+        <ul>
+        	<li>
+            	<dl>
+                	<span class="communicationImg"></span>
+                    <dt>飞信电话体验</dt>
+                    <dd>限量抢100分钟/月通话时长</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="communicationImg2"></span>
+                    <dt>多方通话体验</dt>
+                    <dd>每月10次不限时多方通话</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="communicationImg3"></span>
+                    <dt>移动特权</dt>
+                    <dd>飞信会员免费享用移动特权</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="communicationImg4"></span>
+                    <dt>彩信特权</dt>
+                    <dd>飞信会员免费发送彩信</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+<!--飞信特权-->
+    <div class="fetion">
+    	<header>
+        	<h2>飞信特权</h2>
+            <p>飞信会员可享受丰富的特权功能，生活特权、参与精彩活动！</p>
+        </header>
+        <ul>
+        	<li>
+            	<dl>
+                	<span class="fetionImg"></span>
+                    <dt>拇指群特权</dt>
+                    <dd>群内更多特权 会员专享服务</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg2"></span>
+                    <dt>云消息存储</dt>
+                    <dd>漫游聊天，随手翻查</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg3"></span>
+                    <dt>会员标志</dt>
+                    <dd>凸显您的炫酷名字</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg4"></span>
+                    <dt>好友找回</dt>
+                    <dd>方便快捷的找回好友</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg5"></span>
+                    <dt>排名靠前</dt>
+                    <dd>好友面板里排名最靠前</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg6"></span>
+                    <dt>经验值加速</dt>
+                    <dd>加速飞信等级升级</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg7"></span>
+                    <dt>好友扩充器</dt>
+                    <dd>好友上限达到2000人</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg8"></span>
+                    <dt>创建群特权</dt>
+                    <dd>飞信会员可创建15个群</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg9"></span>
+                    <dt>加入群特权</dt>
+                    <dd>飞信会员可加入50个群组</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg10"></span>
+                    <dt>群组人数特权</dt>
+                    <dd>创建的群组人数可容纳300人</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg11"></span>
+                    <dt>秀动传情特权</dt>
+                    <dd>飞信会员可享专享秀动传情</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg12"></span>
+                    <dt>秀乐园</dt>
+                    <dd>为会员提供专属组件</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg13"></span>
+                    <dt>积分兑换优惠</dt>
+                    <dd>飞信会员独显会员折扣</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg14"></span>
+                    <dt>积分加速</dt>
+                    <dd>飞信会员加速积分成长</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg15"></span>
+                    <dt>手机视频特权</dt>
+                    <dd>会员每月可领取2元视频券</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg16"></span>
+                    <dt>千人群</dt>
+                    <dd>创建千人群，可独享1个1000人群</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg17"></span>
+                    <dt>表情特权</dt>
+                    <dd>飞信会员专属表情</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="fetionImg18"></span>
+                    <dt>群主群发短信</dt>
+                    <dd>飞信会员群主发群内短信100条/月</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+<!--个性特权-->
+    <div class="personality">
+    	<header>
+        	<h2>个性特权</h2>
+            <p>为飞信会员专门打造的专项个性服务，只有尊贵会员可以享用。</p>
+        </header>
+        <ul>
+        	<li>
+            	<dl>
+                	<span class="personalityImg"></span>
+                    <dt>生活特权</dt>
+                    <dd>汇集商家，精选折扣</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                	<span class="personalityImg2"></span>
+                    <dt>会员靓号</dt>
+                    <dd>飞信会员专享靓号</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+<!--专享特权-->
+    <div class="exclusive">
+    	<header>
+        	<h2>专享特权</h2>
+            <p>会员专享内容，只为飞信会员开放。包括免费的运程测试、免费手机游戏、会员头像，壁纸表情等。</p>
+        </header>
+        <ul>
+        	<li>
+            	<dl>
+                    <span class="exclusiveImg"></span>
+                    <dt>专享内容</dt>
+                    <dd>只有飞信会员才可以查看</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                    <span class="exclusiveImg2"></span>
+                    <dt>游戏特权</dt>
+                    <dd>飞信会员专享特权</dd>
+                </dl>
+            </li>
+            <li>
+            	<dl>
+                    <span class="exclusiveImg3"></span>
+                    <dt>赠飞信会员</dt>
+                    <dd>享有5次与好友分享会员特权的机会</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--图片-->
+<div class="img">
+	<img src="img/img5.png" />
+    <a href="#"><span></span>开通年费会员</a>
+<!--[if IE 6]>
+<script src="DD_belatedPNG_0.0.8a.js"></script>
+<script>
+DD_belatedPNG.fix('.img')；
+</script>
+<![endif]-->
+</div>
+<!--底部-->
+<footer class="footer">
+	<div class="div">
+    	<nav class="nav2">
+        	<a href="#">法律声明</a>
+            <a href="#">关于移动</a>
+            <a href="#">关于飞信</a>
+            <a href="#">联系我们</a>
+            <a href="#">网站地图</a>
+            <a href="#">友情链接</a>
+        </nav>
+        <div class="footerBot">
+        <span class="pic10"></span><a href="#">京ICP备05002571号</a>
+        <strong>客服电话：10086</strong>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

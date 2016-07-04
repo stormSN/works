@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin: 0;}
+img { border: 0;width: 165px; height: 100px; }  
+.main { width: 980px; height: 640px; margin: 0 auto; border:1px solid #333; background: url(../img/1.jpg);opacity: .2;}
+
+.bj { width: 734px; height: 387px;margin: 0px auto; border: 2px dashed #333;position: absolute;left: 307px;top: 150px;}
+
+.bj ul { width: 100%; height: 359px;  padding-left: 20px; position: relative;}
+
+.bj ul li { width: 165px; height: 100px; float: left; margin: -1px 5px 0 5px; cursor: move; list-style: none;}
+
+.bj ul .margin1 { margin-top: 29px; }
+
+.bj ul .actives {  border: 2px dashed #999;}
+
+.inputs {width:734px; height: 30px; margin:0 auto; position: absolute;left: 308px;top: 60px;}
+#btns{width: 60px;height: 30px;font-size: 20px;}
